@@ -3,16 +3,16 @@ var gpsBabel = require('./lib/getSpeed')
 var csv = require('csvtojson')
 createGPX = new createGPX()
 
-function gpsSpeed(){
-    var self = this
+var gpsSpeed = {
+    //var self = this
     
      /**
      * Array of GPS points
      * @param arr
      */
-    var results = [] 
-    this.getSpeed(arr){
-
+      
+     getSpeed : function(arr){
+        var results = []
         if(!Array.isArray(arr)){
             throw new Error("Not an Array")
         }        
