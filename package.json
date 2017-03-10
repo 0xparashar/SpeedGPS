@@ -1,0 +1,22 @@
+{
+  "name": "speedgps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitiitb1069/SpeedGPS.git"
+  },
+  "author": "Ankit Parashar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ankitiitb1069/SpeedGPS/issues"
+  },
+  "homepage": "https://github.com/ankitiitb1069/SpeedGPS#readme",
+  "dependencies": {
+    "csvtojson": "^1.1.4"
+  }
+}
