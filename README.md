@@ -1,15 +1,21 @@
-# gps-babel
+# [SpeedGPS](https://github.com/ankitiitb1069/SpeedGPS)
+
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 
 A speed calculater for GPS data using the [GPSBabel](http://www.gpsbabel.org/) application.
 
 ## Getting Started
-Install the module with: `npm install SpeedGPS`
+Install the module with: `npm install speedGPS`
 
 ```javascript
 var speedGPS = require('SpeedGPS').SpeedGPS();
-var result = speedGPS.getSpeed(arr); // "convert file"
+speedGPS.getSpeed(arr, function(result){
+    console.log(results)
+    // result contains the array of JSON objects
+}); // "convert file"
 // where arr = [ {lat: //Latitude, lng: //Longitude, time: //ISO time} ]
-// result = [ {lat: //Latitude, lng: //Longitude, time: //ISO time, speed: // in m/s} ]
+// result = [ {lat: //Latitude, lng: //Longitude, time: //ISO time, speed: // in m/s}.. ]
 ```
 
 ## License

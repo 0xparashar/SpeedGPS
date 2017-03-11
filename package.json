@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/ankitiitb1069/SpeedGPS#readme",
   "dependencies": {
-    "csvtojson": "^1.1.4"
+    "csvtojson": "^1.1.4",
+    "standard": "^9.0.1"
+  },
+  "devDependencies": {
+    "standard": "^9.0.1"
   }
 }
