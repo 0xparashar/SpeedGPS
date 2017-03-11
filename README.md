@@ -6,7 +6,8 @@
 A speed calculater for GPS data using the [GPSBabel](http://www.gpsbabel.org/) application.
 
 ## Getting Started
-Install the module with: `npm install speedGPS`
+Install the module with: 
+`npm install speedgps`
 
 ```javascript
 var speedGPS = require('SpeedGPS');
@@ -17,6 +18,9 @@ speedGPS.getSpeed(arr, function(result){
 // where arr = [ {lat: //Latitude, lng: //Longitude, time: //ISO time} ]
 // result = [ {lat: //Latitude, lng: //Longitude, time: //ISO time, speed: // in m/s}.. ]
 ```
+## Contributions
+Feel free to contribute to add other functionalities of GPS Babel
+
 
 ## License
 Copyright (c) 2017 Ankit Parashar  
