@@ -19,12 +19,15 @@ var gpsSpeed = {
     if (!Array.isArray(arr)) {
       throw new Error('Not an Array')
     } else {
-      var fileName = createGPX.toXML(arr, appDir)
-      gpsBabel.convert(fileName + '.gpx', fileName + '.csv', function (err, result) {
+      createGPX.toXML(arr, appDir, function (err, fileName) {
         if (err) {
           throw new Error(err)
         }
-        csv().fromFile(result)
+        gpsBabel.convert(fileName + '.gpx', fileName + '.csv', function (errr, result) {
+          if (errr) {
+            throw new Error(errr)
+          }
+          csv().fromFile(result)
               .on('json', (jsonObj) => {
                 results.push({lat: jsonObj.Latitude, lng: jsonObj.Longitude, speed: jsonObj.Speed, time: new Date(jsonObj.Date + ',' + jsonObj.Time).toISOString()})
               })
@@ -36,6 +39,7 @@ var gpsSpeed = {
                 fs.unlink(fileName + '.gpx')
                 return cb(results)
               })
+        })
       })
     }
   }

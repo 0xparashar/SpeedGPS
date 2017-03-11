@@ -9,7 +9,7 @@ A speed calculater for GPS data using the [GPSBabel](http://www.gpsbabel.org/) a
 Install the module with: `npm install speedGPS`
 
 ```javascript
-var speedGPS = require('SpeedGPS').SpeedGPS();
+var speedGPS = require('SpeedGPS');
 speedGPS.getSpeed(arr, function(result){
     console.log(results)
     // result contains the array of JSON objects
